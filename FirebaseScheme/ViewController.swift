@@ -10,6 +10,7 @@ import FirebaseFirestore
 
 class ViewController: UIViewController {
     
+    //Create Database
     let db = Firestore.firestore()
     
     override func viewDidLoad() {
@@ -27,9 +28,9 @@ class ViewController: UIViewController {
         // Add a new document with a generated ID
         var ref: DocumentReference? = nil
         ref = db.collection("users").addDocument(data: [
-            "first": "Chithian",
-            "last": "Hunter",
-            "born": 2022
+            "first": "i",
+            "last": "phone",
+            "born": 2004
         ]) { err in
             if let err = err {
                 print("Error adding document: \(err)")
